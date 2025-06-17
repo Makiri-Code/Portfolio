@@ -1,0 +1,40 @@
+.HeaderTextContainer{
+    padding: 60px 0 40px;
+    color: #fff;
+}
+
+.HeaderText {
+    text-align: center;
+    h1{
+        font-size: 63px;
+        font-weight: 400;
+        margin-top: 25px;
+        margin-bottom: 12.5px;
+        font-family: Oswald, Helvetica, sans-serif;
+    }
+    p{
+        margin-bottom: 12.5px;
+    }
+}
+
+.FaIcons {
+    color: #fff;
+    display: inline-block;
+    line-height: 50px;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+}
+
+@media only screen and (max-width: 600px){
+    .HeaderTextContainer{
+    padding-bottom: 30px;
+}
+
+.HeaderText {
+    padding: 0 20px;
+    h1{
+        font-size: 45px;
+    }
+}
+}

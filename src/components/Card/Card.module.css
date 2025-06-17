@@ -1,0 +1,30 @@
+.Card {
+  border-radius: 8px;
+  padding: 6rem;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 
+            0 4px 6px rgba(0, 0, 0, 0.08);
+}
+
+.CardHeader {
+    h2{
+        margin-bottom: 40px;
+        font-size: 27px;
+        font-family: Oswald, Arial, Helvetica, sans-serif;
+        line-height: 1.1;
+        font-weight: 400;
+        color: #000;
+    }
+}
+
+@media only screen and (max-width: 600px){
+   .Card {
+      padding: 40px;
+   }
+   .CardHeader {
+    h2{
+        margin-top: 0;
+    }
+}
+}

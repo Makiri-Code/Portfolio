@@ -1,0 +1,13 @@
+.MainContainer {
+    position: relative;
+    z-index: 1;
+}
+
+.Container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+    padding: 0 15px;
+}
+

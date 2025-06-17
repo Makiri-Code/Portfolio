@@ -1,0 +1,20 @@
+.FaIcons {
+    color: #fff;
+    display: inline-block;
+    line-height: 50px;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    &:hover{
+        color: #673e41;
+    }
+}
+
+.FooterContainer {
+    text-align: center;
+    padding: 20px 0;
+    color: #fff;
+    p{
+        margin-top: 12.5px;
+    }
+}
