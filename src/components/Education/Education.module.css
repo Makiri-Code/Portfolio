@@ -1,46 +1,63 @@
-.EducationContainer{
-    display: flex;
-    gap: 10px;
-    justify-content: space-between;
-    flex-wrap: wrap;
+.EducationContainer {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-.EducationCard{
-    display: flex;
-    flex-direction: column;
-    border: 1px solid #555;
-    border-radius: 8px;
-    gap: 4px;
-    padding: 12px 16px;
-    width: 28%;
-    min-width: 200px;
+.EducationCard {
+  flex-basis: 30%;
+  display: flex;
+  flex-direction: column;
+  /* border: 2px solid var(--primary-color-light); */
+  border-radius: 8px;
+  gap: 4px;
+  padding: 12px 16px;
+  background-image: linear-gradient(
+    90deg,
+    rgb(255, 105, 117, 0.1),
+    rgb(255, 105, 117, 0.1)
+  );
+  /* width: 30%; */
+  /* min-width: 200px; */
+  box-shadow: 0px 3px 5px rgb(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
 }
-
-.CardBody{
-    h3{
-        font-size: 17px;
-        margin-top: 3px;
-        margin-bottom: 20px;
-        color: #000;
-    }
-    p{
-        margin: 0;
-    }
+.EducationCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.3);
+}
+.CardBody {
+  h3 {
+    font-size: 17px;
+    text-transform: uppercase;
+    margin-top: 3px;
+    margin-bottom: 20px;
+    color: #000;
+  }
+  p {
+    margin: 0;
+    color: var(--primary-color-dark);
+    font-weight: 600;
+  }
 }
 
 .CardFooter {
-    align-self: flex-end;
-    a{
-        color: #555;
-        font-size: 14px;
-    }
-    & a:hover{
-        color: #ff0060;
-    }
+  align-self: flex-end;
+  flex-grow: 1;
+  align-content: end;
+  a {
+    color: #555;
+    font-size: 14px;
+  }
+  & a:hover {
+    color: var(--primary-color-dark);
+  }
 }
 
-@media only screen and (max-width: 600px){
-    .EducationCard{
-        width: 100%;
-    }
-} 
+@media only screen and (max-width: 600px) {
+  .EducationCard {
+    flex-basis: 100%;
+  }
+}

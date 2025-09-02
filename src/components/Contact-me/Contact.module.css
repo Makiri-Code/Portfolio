@@ -1,67 +1,78 @@
-.ContactContainer{
-    width: 100%;
-    height: 310px;
-    display: flex;
+.ContactContainer {
+  width: 100%;
+  /* height: 310px; */
+  display: flex;
+  align-items: center;
+}
+.ContactText {
+  flex-basis: 40%;
+  align-self: start;
+  p {
+    font-size: 17px;
+    line-height: 1.85;
+    margin-top: 0;
+    margin-bottom: 20px;
+    span {
+      font-weight: 700;
+    }
+  }
+  a {
+    color: #000;
+    display: inline-flex;
     align-items: center;
-     
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    font-size: 40px;
+    margin-right: 20px;
+    &:hover {
+      color: #ff5b73;
+    }
+  }
 }
-.ContactText{
-    align-self: start;
-    p{
-        font-size: 16px;
-        line-height: 1.85;
-        margin-top: 0;
-        margin-bottom: 20px;
-    }
-    a{
-        
-        color: #000;
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        width: 50px;
-        height: 50px;
-        font-size: 40px;
-        margin-right: 20px;
-        &:hover{
-            color: #ff5b73;
-        }
-    }
-}
-.ImageContainer{
-    width: 88%;
-    position: relative;
-    img:nth-of-type(1){
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
-        z-index: -1;
-       
-    }
-    img:nth-of-type(2){
-        width: 100%;
-        height: 110%;
-        object-fit: contain;
-        z-index: 1;
-       position: absolute;
-       left: 0;
-    }
+.ImageContainer {
+  width: 60%;
+  height: 300px;
+  bottom: 50px;
+  transform: translateY(10px);
+  position: absolute;
+  right: 5%;
+  /* border-radius: 50%; */
+  background-image: url("/image-02.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  animation-name: rotateImg;
+  animation-duration: 0.9s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  /* animation: name duration timing-function delay iteration-count direction fill-mode; */
 }
 
-@media only screen and (max-width: 600px){
-    .ContactContainer{
-        height: auto;
-        flex-direction: column-reverse;
+@keyframes rotateImg {
+  from {
+    transform: translateY(-10px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .ContactContainer {
+    height: auto;
+    flex-direction: column-reverse;
+  }
+  .ImageContainer {
+    position: unset;
+    width: 100%;
+  }
+  .ContactText {
+    a {
+      width: 30px;
+      height: 30px;
+      font-size: 30px;
     }
-    .ImageContainer{
-        width: 100%;
-    }
-    .ContactText{
-        a{
-            width: 30px;
-            height: 30px;
-            font-size: 20px;
-            
-        }
-    }
+  }
 }
