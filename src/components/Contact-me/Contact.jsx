@@ -12,24 +12,26 @@ const Contact = () => {
             a project, or just want to say hi? I’m always up for a chat! Drop me
             a message — I’d love to hear from you!
           </p>
-          <a href="https://github.com/Makiri-Code/" target="_blank">
-            <FaGithub />
-          </a>
-          <a
-            href="https://web.facebook.com/profile.php?id=100076691955707"
-            target="_blank"
-          >
-            <FaFacebook />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/emmanuel-amakiri-10a317174/"
-            target="_blank"
-          >
-            <FaLinkedin />
-          </a>
-          <a href="https://twitter.com/Makiri_manuel" target="_blank">
-            <FaTwitter />
-          </a>
+          <div className={styles.socials}>
+            <a href="https://github.com/Makiri-Code/" target="_blank">
+              <FaGithub />
+            </a>
+            <a
+              href="https://web.facebook.com/profile.php?id=100076691955707"
+              target="_blank"
+            >
+              <FaFacebook />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/emmanuel-amakiri-10a317174/"
+              target="_blank"
+            >
+              <FaLinkedin />
+            </a>
+            <a href="https://twitter.com/Makiri_manuel" target="_blank">
+              <FaTwitter />
+            </a>
+          </div>
         </div>
         <div className={styles.ImageContainer}>
           {/* <img src={blur} alt="" /> */}

@@ -23,6 +23,7 @@
   ul {
     margin-bottom: 12.5px;
     margin-top: 0;
+    font-size: 17px;
   }
   &:last-of-type {
     margin-bottom: 0;
