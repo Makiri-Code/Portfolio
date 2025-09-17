@@ -45,6 +45,14 @@ const HeaderText = () => {
         <p>
           <a
             className={styles.FaIcons}
+            href="https://github.com/Makiri-Code"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a
+            className={styles.FaIcons}
             href="https://web.facebook.com/profile.php?id=100076691955707"
             target="_blank"
             rel="noopener noreferrer"

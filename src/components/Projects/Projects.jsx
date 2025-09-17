@@ -1,7 +1,7 @@
 import Card from "../Card/Card";
 import Carousel from "../Carousel/Carousel";
 import styles from "./Projects.module.css";
-import xpacy from "../../assets/xpacy-portfolio.jpeg";
+import xpacy from "../../assets/xpacy-front.png";
 import crwnclothing from "../../assets/crwn-clothing.png";
 import makzplayer from "../../assets/Makz-player.png";
 import fastReactPizza from "../../assets/fast-react-pizza.png";
@@ -11,7 +11,11 @@ const Projects = () => {
       className={styles.ProjectImgContainer}
       style={{ backgroundImage: `url(${xpacy})` }}
     >
-      <div className={styles.ProjectDescription}>
+      <a
+        className={styles.ProjectDescription}
+        href="https://xpacy.com"
+        target="_blank"
+      >
         <h3>Xpacy Web App</h3>
         <p>
           Xpacy is a platform revolutionizing real estate administration with
@@ -23,13 +27,17 @@ const Projects = () => {
           {" "}
           <i class="fa-solid fa-link"></i> Xpacy.com{" "}
         </a>
-      </div>
+      </a>
     </div>,
     <div
       className={styles.ProjectImgContainer}
       style={{ backgroundImage: `url(${crwnclothing})` }}
     >
-      <div className={styles.ProjectDescription}>
+      <a
+        className={styles.ProjectDescription}
+        href="https://crwn-clothing-app-omega.vercel.app/"
+        target="_blank"
+      >
         <h3>Crown Clothing Web App</h3>
         <p>
           The CRWN Clothing demo is a full-featured, visually appealing shopping
@@ -41,13 +49,17 @@ const Projects = () => {
           {" "}
           <i class="fa-solid fa-link"></i> CrwnClothing.com{" "}
         </a>
-      </div>
+      </a>
     </div>,
     <div
       className={styles.ProjectImgContainer}
       style={{ backgroundImage: `url(${makzplayer})` }}
     >
-      <div className={styles.ProjectDescription}>
+      <a
+        className={styles.ProjectDescription}
+        href="https://makz-player.vercel.app/"
+        target="_blank"
+      >
         <h3>🎵 Makz Player</h3>
         <p>
           {" "}
@@ -58,13 +70,17 @@ const Projects = () => {
           {" "}
           <i class="fa-solid fa-link"></i> Makz Player{" "}
         </a>
-      </div>
+      </a>
     </div>,
     <div
       className={styles.ProjectImgContainer}
       style={{ backgroundImage: `url(${fastReactPizza})` }}
     >
-      <div className={styles.ProjectDescription}>
+      <a
+        className={styles.ProjectDescription}
+        href="https://fast-react-pizza-ashy-psi.vercel.app/"
+        target="_blank"
+      >
         <h3>🍕 Fast React Pizza Co.</h3>
         <p>
           Fast React Pizza Co. is a pizza ordering platform built with React,
@@ -74,7 +90,7 @@ const Projects = () => {
         <a href="https://fast-react-pizza-ashy-psi.vercel.app/" target="_blank">
           <i class="fa-solid fa-link"></i> Fast React Pizza
         </a>
-      </div>
+      </a>
     </div>,
   ];
   return (
