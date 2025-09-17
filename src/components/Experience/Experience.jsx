@@ -32,7 +32,7 @@ const Experience = () => {
     },
   ];
   return (
-    <Card title={"Work Experience"} dataAos={"fade-down"}>
+    <Card title={"Work Experience"} dataAos={"fade-down"} id={"experience"}>
       {experience.map(({ duration, link, jobTitle, jobRole }, index) => (
         <div className={styles.ExperienceContent} key={index}>
           <small>{duration}</small>

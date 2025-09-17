@@ -15,7 +15,7 @@ const AboutMe = () => {
     document.body.removeChild(link);
   };
   return (
-    <Card title={"About me"} dataAos={"fade-right"}>
+    <Card title={"About me"} dataAos={"fade-right"} id={"about-me"}>
       <div className={styles.ProfileImgContainer}>
         <div
           className={styles.ImgContainer}

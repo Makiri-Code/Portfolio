@@ -41,7 +41,20 @@ a {
 * {
   box-sizing: border-box;
 }
+::-webkit-scrollbar {
+  width: 10px; /* For vertical scrollbar */
+  background-color: #f5f5f5;
+}
+::-webkit-scrollbar-track {
+  background-color: #e0e0e0;
+  border-radius: 8px;
+}
 
+::-webkit-scrollbar-thumb {
+  background-color: var(--primary-color-light);
+  border-radius: 8px;
+  /* border: 1px solid #555; */
+}
 /* @media (prefers-color-scheme: light) {
   :root {
     color: #213547;

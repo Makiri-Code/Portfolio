@@ -4,6 +4,7 @@ import styles from "./Projects.module.css";
 import xpacy from "../../assets/xpacy-portfolio.jpeg";
 import crwnclothing from "../../assets/crwn-clothing.png";
 import makzplayer from "../../assets/Makz-player.png";
+import fastReactPizza from "../../assets/fast-react-pizza.png";
 const Projects = () => {
   const slides = [
     <div
@@ -59,9 +60,25 @@ const Projects = () => {
         </a>
       </div>
     </div>,
+    <div
+      className={styles.ProjectImgContainer}
+      style={{ backgroundImage: `url(${fastReactPizza})` }}
+    >
+      <div className={styles.ProjectDescription}>
+        <h3>🍕 Fast React Pizza Co.</h3>
+        <p>
+          Fast React Pizza Co. is a pizza ordering platform built with React,
+          Redux and React Router to show potential employers my understanding of
+          state management, consistent data flow and a beautiful UI as a plus 😁
+        </p>
+        <a href="https://fast-react-pizza-ashy-psi.vercel.app/" target="_blank">
+          <i class="fa-solid fa-link"></i> Fast React Pizza
+        </a>
+      </div>
+    </div>,
   ];
   return (
-    <Card title={"My Recent Works"} dataAos={"fade-up"}>
+    <Card title={"My Recent Works"} dataAos={"fade-up"} id={"projects"}>
       <Carousel slides={slides} />
     </Card>
   );
